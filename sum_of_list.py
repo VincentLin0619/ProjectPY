@@ -1,18 +1,10 @@
+data = []
 
+while True:
+    new_list = input('請增加列表：')
+    new_list = str(new_list)
+    if new_list == 'q':
+        break
+    data.append(int(new_list))
 
-def add_data():
-    data = []
-    while True:
-        user_send = input('請增加表單')
-        user_send = str(user_send)
-        if user_send == 'q':
-            data.append(user_send)
-            break
-    return data
-
-
-print(add_data())
-
-
-# def sum_of_list():
-#     return sum()
+print(sum(data))
